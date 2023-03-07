@@ -22,7 +22,7 @@ const runTime = document.getElementById("runTime");
 const timeGame = setInterval(CalctimeGame,1000)
 let HightScore = localStorage.getItem("Mario Jump HightScore");
 let autoReplay = "não"
-const ReplayURL = "https://pingobras.glitch.me/LUIS_DAS_ARTIMANHAS/MARIO_GAME/"
+const ReplayURL = "https://pingobras-mario-jump.glitch.me/"
 
 
 function restart() {

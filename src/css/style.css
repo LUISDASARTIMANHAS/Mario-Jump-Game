@@ -40,13 +40,13 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  max-width:100%;
+  max-width: 100%;
 }
-js{
+js {
   width: auto;
   display: inline;
 }
-.game-board{
+.game-board {
   width: 100%;
   height: 600px;
   border-bottom: 15px solid green;
@@ -54,33 +54,33 @@ js{
   position: relative;
   overflow: hidden;
   bottom: 0;
-  background: linear-gradient(white,lightblue);
+  background: linear-gradient(white, lightblue);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-.gameCursor{
-cursor: crosshair;
+.gameCursor {
+  cursor: crosshair;
 }
-config{
- font-size:20px;
- text-transform:capitalize;
- background-color:purple;
- font-style:italic;
- color: white;
- width: 100%; 
- text-align: center;
- cursor: crosshair;
- height:600px;
+config {
+  font-size: 20px;
+  text-transform: capitalize;
+  background-color: purple;
+  font-style: italic;
+  color: white;
+  width: 100%;
+  text-align: center;
+  cursor: crosshair;
+  height: 600px;
 }
-.pipe{
+.pipe {
   position: absolute;
   bottom: 0;
   width: 80px;
   height: 80px;
   animation: pipe-animation 2s infinite linear;
 }
-.pipe-plant{
+.pipe-plant {
   position: absolute;
   bottom: -18px;
   width: 80px;
@@ -89,49 +89,48 @@ config{
   display: none;
   border: 1px solid black;
 }
-.castelo{
+.castelo {
   position: absolute;
   bottom: 0;
   width: 50%;
   height: 90%;
 }
-.mario{
+.mario {
   position: absolute;
   bottom: 0;
   width: 150px;
   height: 150px;
 }
-.jump{
-  animation: jump 500ms ease-out;  
+.jump {
+  animation: jump 500ms ease-out;
 }
-.clouds{
+.clouds {
   position: absolute;
   width: 450px;
   height: 450px;
   animation: clouds-animation 22s infinite linear;
 }
-.bird{
+.bird {
   position: absolute;
   width: 75px;
   height: 75px;
   animation: bird-animation 15s infinite linear;
 }
-.airplane{
+.airplane {
   position: absolute;
   width: 133px;
   height: 100px;
   animation: airplane-animation 120s infinite linear;
 }
-.game-over{
+.game-over {
   position: absolute;
   width: 280px;
   height: 280px;
   left: 35%;
   display: none;
   z-index: 1;
-
 }
-.cubo{
+.cubo {
   position: absolute;
   width: 55px;
   height: 55px;
@@ -139,149 +138,159 @@ config{
   animation: cubo-animation 30s infinite linear;
 }
 
-.animation-game-over{
-  animation: game-over-animation 7s linear;  
+.animation-game-over {
+  animation: game-over-animation 7s linear;
 }
 
-@keyframes pipe-animation{
-  from{
+@keyframes pipe-animation {
+  from {
     right: -80px;
   }
-  to{
-    right:100%;
+  to {
+    right: 100%;
   }
 }
-@keyframes pipe-plant-animation{
-  from{
+@keyframes pipe-plant-animation {
+  from {
     right: -80px;
   }
-  to{
-    right:100%;
+  to {
+    right: 100%;
   }
 }
-@keyframes cubo-animation{
-  from{
+@keyframes cubo-animation {
+  from {
     right: -80px;
   }
-  to{
-    right:100%;
+  to {
+    right: 100%;
   }
 }
-@keyframes jump{
-  0%{
+@keyframes jump {
+  0% {
     bottom: 0;
   }
-  40%{
+  40% {
     bottom: 180px;
   }
-  50%{
+  50% {
     bottom: 180px;
   }
-  60%{
+  60% {
     bottom: 180px;
   }
-  100%{
+  100% {
     bottom: 0;
   }
 }
-@keyframes clouds-animation{
-  from{
+@keyframes clouds-animation {
+  from {
     right: -550px;
   }
-  to{
-    right:100%;
+  to {
+    right: 100%;
   }
 }
-@keyframes bird-animation{
-  from{
+@keyframes bird-animation {
+  from {
     right: -750px;
   }
-  to{
-    right:100%;
+  to {
+    right: 100%;
   }
-  0%{
+  0% {
     bottom: 90%;
   }
-  30{
+  30 {
     bottom: 75%;
   }
-  40%{
+  40% {
     bottom: 65%;
   }
-  50%{
+  50% {
     bottom: 50%;
   }
-  60%{
+  60% {
     bottom: 65%;
   }
-  70%{
+  70% {
     bottom: 75%;
   }
-  100%{
+  100% {
     bottom: 90%;
   }
 }
-@keyframes airplane-animation{
-  from{
+@keyframes airplane-animation {
+  from {
     right: -5750px;
   }
-  to{
-    right:100%;
+  to {
+    right: 100%;
   }
-  0%{
+  0% {
     bottom: 90%;
   }
-  30{
+  30 {
     bottom: 75%;
   }
-  40%{
+  40% {
     bottom: 65%;
   }
-  50%{
+  50% {
     bottom: 50%;
   }
-  60%{
+  60% {
     bottom: 55%;
   }
-  70%{
+  70% {
     bottom: 50%;
   }
-  100%{
+  100% {
     bottom: 55%;
   }
 }
-@keyframes game-over-animation{
-  0%{
+@keyframes game-over-animation {
+  0% {
     bottom: -50%;
   }
-  10%{
+  10% {
     bottom: -45%;
   }
-  20%{
+  20% {
     bottom: -35%;
   }
-  30%{
+  30% {
     bottom: -25%;
   }
-  40%{
+  40% {
     bottom: -15%;
   }
-  50%{
+  50% {
     bottom: 0%;
   }
-  60%{
+  60% {
     bottom: 10%;
   }
-  70%{
+  70% {
     bottom: 20%;
   }
-  80%{
+  80% {
     bottom: 30%;
   }
-  90%{
+  90% {
     bottom: 40%;
   }
-  100%{
+  100% {
     bottom: 50%;
   }
+}
+info {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-style: normal;
+  text-shadow: rgb(255, 0, 0) -1px 0px 0px, rgb(0, 255, 255) 1px 0px 0px;
+  text-align: center;
+}
+left{
+  text-align:left;
 }
