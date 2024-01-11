@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+game-board {
+    display: block;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    border: solid black 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+game-board img{
+    position: absolute;
+}
+
+.jump{
+    animation: jump-animation;
+    -webkit-animation: jump-animation;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump-animation {
+    0% {
+        bottom: 0;
+    }
+
+    40%{
+        bottom: 180px;
+    }
+
+    50%{
+        bottom: 180px;
+    }
+
+    60%{
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}

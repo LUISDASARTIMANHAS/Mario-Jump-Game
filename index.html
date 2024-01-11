@@ -6,11 +6,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=0.6" />
     <link rel="icon" href="https://www.pngitem.com/pimgs/m/399-3992589_super-mario-3d-world-mario-icon-hd-png.png">
-    
+
     <link rel="stylesheet" href="https://pingobras.glitch.me/css/head.css" />
     <links></links>
     <link rel="stylesheet" href="./src/css/style.css" />
-    <seo>    
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <seo>
     <meta
       name="description"
       content="Jogo do Mario / Divirta-se tentando escapar dos canos! / Todos os direitos ©luis_das_artimanhas©"/>
@@ -26,124 +27,18 @@
       content="https://iconarchive.com/show/super-mario-icons-by-ph03nyx/Paper-Mario-icon.html"/>
     <meta name="twitter:card" content="summary" />
     </seo>
-    
+
     <title>PINGOBRAS Mario Jump Web</title>
-    
- </head>
+
+  </head>
   <body>
-    <div class="site-altura">
-    <div class="conteudo" role="main">
-        
-        <div class="game-board">
-        <info>
-        <p>Ave:</p>
-        <left>
-        <p>Tempo de jogo: <js id="runTime">0</js>s</p>
-        </left>
-          
-        <p inline vermelho>Placar: <js id="placar">Sem pontos</js></p>
-        <p azul>Pontuação Alta: <js id="HightScore">Sem Pontuação Alta</js></p>
-        </info>
-          <img src="https://i.pinimg.com/736x/3b/d3/e7/3bd3e7fcf03935e331b008d1f9398f61--mario.jpg"
-               alt="torre"
-               class="castelo" hidden>
-          <img src="https://freepngimg.com/download/logo/174680-logo-game-pic-over-free-download-image.png"
-               alt="game over"
-               class="game-over">
-          <img src="https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/nuvem%20mario%20bros%20png%20_1320%20x%20770_px%2031%2C1%20KB%20(1).png?v=1662585282500"
-               alt="Nuvens"
-               class="clouds">
-          <img src="https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/aviao-e-aeronave-imagem-animada-0050.gif?v=1662645357604"
-               alt="aviao"
-               class="airplane" hidden>
-          <img src="https://www.imagensanimadas.com/data/media/230/ave-passaro-imagem-animada-0397.gif"
-               alt="Passaro voador"
-               class="bird"> 
-          <img src="https://w7.pngwing.com/pngs/328/162/png-transparent-new-super-mario-bros-2-super-mario-bros-3-mario-sonic-at-the-olympic-games-mario-heroes-super-mario-bros-text.png"
-               alt="Cubo Surpreza"
-               class="cubo">
-          <img src="https://gamerview.uai.com.br/wp-content/uploads/2019/12/mario-gif.gif"
-               alt="mario"
-               class="mario">
-          <img src="https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Piranha_Plant%2C_New_Super_Mario_Bros._U.png?v=1662855056184"
-               alt="cano de planta"
-               class="pipe-plant">
-          <img
-               src="https://cdn.pixabay.com/photo/2013/07/12/13/52/super-mario-brothers-147465_1280.png"
-               alt="cano do mario"
-               class="pipe">
-        </div>
-       <config id="configsM">
-         
-<barraicon style="left:0;">
-  <a href="https://pingobras.glitch.me/LUIS_DAS_ARTIMANHAS"><i class="fa fa-home"></i></a>
-  <a class="barramain" href="#">Mario Jump<i class="fa fa-gamepad"></i></a>
-  <a href="https://pingobras.glitch.me/LUIS_DAS_ARTIMANHAS/JOGO-DA-COBRA">Jogo da cobra<i class="fa fa-gamepad"></i></a>
-  <a href="https://192.168.1.1"> REDE<i class="fa fa-globe"></i></a>
-</barraicon>         
-        
-        <br><br><br><br>
-         
-      <h1>Menu De Configurações</h1>
-      <p style=" font-style:normal;
-                 font-size:20px;
-                 text-transform:capitalize;
-                 text-align:left;">Tela do usuario: <js id="labelTela">Sem Dimenções de tela</js></p>
-      <p style="font-style:normal;
-                font-size:20px;
-                text-transform:capitalize;
-                text-align:left;">Modo de jogo: Padrão(medium)</p>
-        <audio  
-            controls
-            class="audio"
-            loop
-            volume="0.1"
-            preload="auto"
-            src="https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/MÚSICA TEMA DO SUPER MARIO WORLD.mp3?v=1662587661787">
-          </audio>
-         
-         <br>
-         
-        <button disabled verde class="btnNav gameCursor">
-          Easy mode(Indisponivel!)
-        </button>
-         
-         <button laranja class="btnNav gameCursor">
-          Medium mode
-        </button>
-         
-        <button disabled vermelho class="btnNav gameCursor">
-          Hard mode(Indisponivel!)
-        </button>
-         
-        <button class="btnNav gameCursor" id="btnHit" onclick="HitBox()"> 
-          Ativar Hit Box?
-        </button>
-         
-         <button class="btnNav gameCursor" id="btnRestart" onclick="restart()"> 
-          Reiniciar Automatico?
-        </button>
-         
-         <br>
-         <br>
-         
-        <button class="btnNav gameCursor" onclick="playGame()"> 
-          Iniciar Jogo
-        </button>
-         
-         <h1>Placar Global:</h1>
-         <lu  style="list-style-type:decimal;">
-         <li>Lukinha: 84 PTS</li>
-         <li>Jeff Ramos: 65 PTS</li>
-         <li>PedroM: 55 PTS</li>
-         <li>LUIS_DAS_ARTIMANHAS: 55 PTS</li> 
-         <li>Voce: <js id="HightScoreGlobal">0</js> PTS</li>
-         </lu>
-         
-         </config>
-        
-      </div></div>
+
+    <game-board>
+      <img src="./src/assets/mario.gif" alt="Mario Gif" class="mario">
+      <img src="./src/assets/pipe.png" alt="Tubo do mario" class="pipe">
+    </game-board>
+
   </body>
-  <script src="https://pingobras.glitch.me/js/links.js" defer></script>
+  <!-- <script src="https://pingobras.glitch.me/src/js/links.js" defer></script> -->
   <script src="./src/js/index.js" defer></script>
 </html>
