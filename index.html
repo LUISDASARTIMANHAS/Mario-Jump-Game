@@ -7,44 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.6" />
     <link rel="icon" href="https://www.pngitem.com/pimgs/m/399-3992589_super-mario-3d-world-mario-icon-hd-png.png">
 
-    <link rel="stylesheet" href="https://pingobras.glitch.me/css/head.css" />
     <links></links>
     <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/config.css">
     <link rel="stylesheet" href="./src/css/reset.css">
 
     <title>PINGOBRAS Mario Jump Web</title>
 
   </head>
   <body>
-
-    <config id="configsM">    
-
+    <config id="configsM">
       <h1>Menu De Configurações</h1>
       <p>Tela do usuario: <js id="labelTela">largura: 1280X altura: 680</js></p>
       <p>Modo de jogo: Padrão(medium)</p>
+      <section class="dificuldade">
 
-      <button disabled="" verde="" class="btnNav gameCursor">
-      Easy mode(Indisponivel!)
-      </button>
+        <button disabled verde class="btn">
+          Easy mode(Indisponivel!)
+        </button>
 
-      <button laranja="" class="btnNav gameCursor">
-      Medium mode
-      </button>
+        <button laranja class="btn">
+          Medium mode
+        </button>
 
-      <button disabled="" vermelho="" class="btnNav gameCursor">
-      Hard mode(Indisponivel!)
-      </button>
+        <button disabled vermelho class="btn">
+          Hard mode(Indisponivel!)
+        </button>
+      </section>
+      <section class="buttons-game">
+        <button class="btn" id="btnHit" onclick="HitBox()"> 
+          Ativar Hit Box?
+        </button>
 
-      <button class="btnNav gameCursor" id="btnHit" onclick="HitBox()"> 
-      Ativar Hit Box?
-      </button>
-
-    <br>
-    <br>
-
-      <button class="btnNav gameCursor" onclick="playGame()"> 
-      Iniciar Jogo
-      </button>
+        <button class="btn" onclick="playGame()"> 
+          Iniciar Jogo
+        </button>
+      </section>
     </config>
 
   </body>

@@ -16,3 +16,11 @@
     animation: clouds-animation 40s infinite linear;
     -webkit-animation: clouds-animation 40s infinite linear;
 }
+
+.cubo {
+    width: 55px;
+    height: 55px;
+    bottom: 180px;
+    animation: cubo-animation 30s infinite linear;
+    -webkit-animation: cubo-animation 30s infinite linear;
+}

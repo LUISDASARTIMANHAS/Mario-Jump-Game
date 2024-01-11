@@ -1,17 +1,3 @@
-config {
-    font-size: 20px;
-    text-transform: capitalize;
-    background-color: purple;
-    font-style: italic;
-    color: white;
-    width: 100%;
-    text-align: center;
-    cursor: crosshair;
-    min-height: 600px;
-    max-height: 100%;
-    font-style: normal;
-}
-
 info {
     font-size: 20px;
     text-transform: capitalize;
@@ -22,4 +8,23 @@ info {
 
 left {
     text-align: left;
+}
+
+config .dificuldade {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+config .buttons-game {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+config p{
+    margin:5px;
 }
