@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PT" style="height:100%">
+<html lang="pt-BR">
 
   <head>
 
@@ -11,34 +11,43 @@
     <links></links>
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/reset.css">
-    <seo>
-    <meta
-      name="description"
-      content="Jogo do Mario / Divirta-se tentando escapar dos canos! / Todos os direitos ©luis_das_artimanhas©"/>
-    <meta name="robots" content="index,follow" />
-    <meta property="og:title" content="Mario Jump" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://pingobras.glitch.me/jogos/web/mario.html" />
-    <meta
-      property="og:description"
-      content="Jogo do Mario / Divirta-se tentando escapar dos canos! / Todos os direitos ©luis_das_artimanhas©"/>
-    <meta
-      property="og:image"
-      content="https://iconarchive.com/show/super-mario-icons-by-ph03nyx/Paper-Mario-icon.html"/>
-    <meta name="twitter:card" content="summary" />
-    </seo>
 
     <title>PINGOBRAS Mario Jump Web</title>
 
   </head>
   <body>
 
-    <game-board>
-      <img src="./src/assets/mario.gif" alt="Mario Gif" class="mario">
-      <img src="./src/assets/pipe.png" alt="Tubo do mario" class="pipe">
-    </game-board>
+    <config id="configsM">    
+
+      <h1>Menu De Configurações</h1>
+      <p>Tela do usuario: <js id="labelTela">largura: 1280X altura: 680</js></p>
+      <p>Modo de jogo: Padrão(medium)</p>
+
+      <button disabled="" verde="" class="btnNav gameCursor">
+      Easy mode(Indisponivel!)
+      </button>
+
+      <button laranja="" class="btnNav gameCursor">
+      Medium mode
+      </button>
+
+      <button disabled="" vermelho="" class="btnNav gameCursor">
+      Hard mode(Indisponivel!)
+      </button>
+
+      <button class="btnNav gameCursor" id="btnHit" onclick="HitBox()"> 
+      Ativar Hit Box?
+      </button>
+
+    <br>
+    <br>
+
+      <button class="btnNav gameCursor" onclick="playGame()"> 
+      Iniciar Jogo
+      </button>
+    </config>
 
   </body>
   <!-- <script src="https://pingobras.glitch.me/src/js/links.js" defer></script> -->
-  <script src="./src/js/index.js" defer></script>
+  <script src="./src/js/config.js" defer></script>
 </html>

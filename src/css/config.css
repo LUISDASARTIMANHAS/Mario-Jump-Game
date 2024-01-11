@@ -1,0 +1,25 @@
+config {
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: purple;
+    font-style: italic;
+    color: white;
+    width: 100%;
+    text-align: center;
+    cursor: crosshair;
+    min-height: 600px;
+    max-height: 100%;
+    font-style: normal;
+}
+
+info {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-style: normal;
+    text-shadow: rgb(255, 0, 0) -1px 0px 0px, rgb(0, 255, 255) 1px 0px 0px;
+    text-align: center;
+}
+
+left {
+    text-align: left;
+}

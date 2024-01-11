@@ -2,11 +2,17 @@
     bottom: 0;
     width: 80px;
     right: -80px;
-    animation: pipe-animation 2s infinite linear;
-    -webkit-animation: pipe-animation 2s infinite linear;
+    animation: pipe-animation 1.5s infinite linear;
+    -webkit-animation: pipe-animation 1.5s infinite linear;
 }
 
 .mario{
     bottom: 0;
     width: 150px;
+}
+
+.clouds{
+    width: 550px;
+    animation: clouds-animation 40s infinite linear;
+    -webkit-animation: clouds-animation 40s infinite linear;
 }
